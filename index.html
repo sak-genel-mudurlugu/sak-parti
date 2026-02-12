@@ -31,8 +31,9 @@
         .news-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 60px; }
         .news-item { background: rgba(255, 255, 255, 0.1); border-left: 5px solid #ffd700; padding: 20px; display: flex; align-items: center; gap: 20px; }
         .news-date { background: #ffd700; color: #b30000; padding: 10px; font-weight: bold; text-align: center; min-width: 80px; border-radius: 5px; }
-        
-        /* CARD GRID & ANIMATIONS */
+        .news-text h3 { margin: 0 0 5px 0; color: #ffd700; }
+
+        /* Hover Effect Grid */
         .grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
@@ -47,13 +48,13 @@
             overflow: hidden; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
             text-align: center; 
-            transition: all 0.4s ease; /* This makes the hover smooth */
+            transition: all 0.4s ease; /* Makes the "reaction" smooth */
         }
 
-        /* The "Reacting" Hover Effect */
+        /* Card Hover Interaction */
         .card:hover { 
-            transform: translateY(-15px); /* Lifts the card up */
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Deepens the shadow */
+            transform: translateY(-15px); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5); 
         }
 
         .card img { width: 100%; height: 350px; object-fit: cover; }
@@ -61,7 +62,7 @@
         .card-body h3 { margin: 0; color: #b30000; font-size: 1.6rem; }
         .card-body p { margin: 8px 0 0; font-weight: bold; color: #555; text-transform: uppercase; font-size: 0.9rem; }
 
-        /* Socials Area */
+        /* Socials */
         .social-area { background: #1a1a1a; padding: 60px 20px; text-align: center; }
         .social-btn { 
             display: inline-block; 
@@ -89,55 +90,3 @@
 </header>
 
 <div class="container">
-    
-    <h2 class="section-title">Son Duyurular</h2>
-    <div class="news-grid">
-        <div class="news-item">
-            <div class="news-date">12 ŞUB<br>2026</div>
-            <div class="news-text">
-                <h3>Yönetim Kurulumuz Güncellendi</h3>
-                <p>Milletvekillerimiz Avina ve Lizzy kadromuza katılmıştır. Melisa görevinden ayrılmıştır.</p>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="section-title">Parti Yönetimi</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="ferudun.jpg" alt="Ferudun Tosun">
-            <div class="card-body"><h3>Ferudun Tosun</h3><p>Alkol Başkanı</p></div>
-        </div>
-        <div class="card">
-            <img src="fahrettin.jpg" alt="Fahrettin">
-            <div class="card-body"><h3>Fahrettin</h3><p>Parti Lideri</p></div>
-        </div>
-        <div class="card">
-            <img src="caravan.jpg" alt="GV CARAVAN">
-            <div class="card-body"><h3>GV CARAVAN</h3><p>Parti Saymanı</p></div>
-        </div>
-    </div>
-
-    <h2 class="section-title">Milletvekilleri</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="avina.jpg" alt="Avina">
-            <div class="card-body"><h3>Avina</h3><p>Milletvekili</p></div>
-        </div>
-        <div class="card">
-            <img src="lizzy.jpg" alt="Lizzy">
-            <div class="card-body"><h3>Lizzy</h3><p>Milletvekili</p></div>
-        </div>
-    </div>
-
-</div>
-
-<div class="social-area">
-    <h2>Bizi Takip Edin</h2>
-    <a href="#" class="social-btn yt">YOUTUBE</a>
-    <a href="#" class="social-btn tt">TIKTOK</a>
-</div>
-
-<footer>&copy; 2026 SAK PARTİ. Tüm Hakları Saklıdır.</footer>
-
-</body>
-</html>
