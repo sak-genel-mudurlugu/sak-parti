@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ŞAK PARTİ</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      background: #e02020; /* strong red */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    .logo {
-      width: 140px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      .logo {
-        width: 100px;
-      }
-    }
-  </style>
+    <style>
+        body {
+            background-color: #b30000; /* Your red background */
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+        .container {
+            padding: 50px;
+        }
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="ŞAK Parti Logo" class="logo" />
-    <h1>ŞAK PARTİ GENEL MÜDÜRLÜĞÜ</h1>
-  </div>
+
+    <nav>
+        <h1>SAK PARTİ</h1>
+    </nav>
+
+    <div class="container">
+        <img src="logo.png" alt="Logo" style="width:150px;">
+        
+        <h2>Welcome to our Website</h2>
+        <p>This is where your new description goes!</p>
+
+        <div class="gallery">
+            <h3>Our Photos</h3>
+            <img src="logo.png" alt="Example"> 
+        </div>
+    </div>
+
 </body>
 </html>
