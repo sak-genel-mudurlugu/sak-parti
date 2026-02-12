@@ -38,4 +38,117 @@
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
             gap: 30px; 
-            margin-bottom
+            margin-bottom: 50px; 
+        }
+
+        .card { 
+            background: #fff; 
+            color: #333; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+            text-align: center; 
+            transition: all 0.4s ease; /* Smooth hover transition */
+        }
+
+        /* Hover Reaction */
+        .card:hover { 
+            transform: translateY(-15px); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5); 
+        }
+
+        .card img { width: 100%; height: 350px; object-fit: cover; }
+        .card-body { padding: 25px; }
+        .card-body h3 { margin: 0; color: #b30000; font-size: 1.6rem; }
+        .card-body p { margin: 8px 0 0; font-weight: bold; color: #555; text-transform: uppercase; font-size: 0.9rem; }
+
+        /* Social Media Area */
+        .social-area { background: #1a1a1a; padding: 60px 20px; text-align: center; }
+        .social-btn { 
+            display: inline-block; 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px 40px; 
+            margin: 10px; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+        .yt { background: #e62117; }
+        .tt { background: #000; border: 1px solid #fff; }
+        .social-btn:hover { transform: scale(1.1); filter: brightness(1.2); }
+
+        footer { background: #000; padding: 20px; text-align: center; color: #aaa; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="SAK PARTİ" class="logo">
+    <h1>SAK PARTİ</h1>
+    <p class="slogan">"Gelecek İçin El Ele"</p>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-title">Son Duyurular</h2>
+    <div class="news-grid">
+        
+        <div class="news-item">
+            <div class="news-date">12 ŞUB<br>2026</div>
+            <div class="news-text">
+                <h3>SAK PARTİ Dijital Platformu Yayında</h3>
+                <p>Resmi web sitemiz üzerinden duyurularımızı ve vizyonumuzu takip edebilirsiniz.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">10 ŞUB<br>2026</div>
+            <div class="news-text">
+                <h3>Yeni Dönem Çalışmaları Başladı</h3>
+                <p>Parti yönetim kurulumuz yeni projeler ve hedefler doğrultusunda çalışmalarına başlamıştır.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Parti Yönetimi</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="ferudun.jpg" alt="Ferudun Tosun">
+            <div class="card-body"><h3>Ferudun Tosun</h3><p>Alkol Başkanı</p></div>
+        </div>
+        <div class="card">
+            <img src="fahrettin.jpg" alt="Fahrettin">
+            <div class="card-body"><h3>Fahrettin</h3><p>Parti Lideri</p></div>
+        </div>
+        <div class="card">
+            <img src="caravan.jpg" alt="GV CARAVAN">
+            <div class="card-body"><h3>GV CARAVAN</h3><p>Parti Saymanı</p></div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Milletvekilleri</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="avina.jpg" alt="Avina">
+            <div class="card-body"><h3>Avina</h3><p>Milletvekili</p></div>
+        </div>
+        <div class="card">
+            <img src="lizzy.jpg" alt="Lizzy">
+            <div class="card-body"><h3>Lizzy</h3><p>Milletvekili</p></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="social-area">
+    <h2>Bizi Takip Edin</h2>
+    <a href="#" class="social-btn yt">YOUTUBE</a>
+    <a href="#" class="social-btn tt">TIKTOK</a>
+</div>
+
+<footer>&copy; 2026 SAK PARTİ. Tüm Hakları Saklıdır.</footer>
+
+</body>
+</html>
