@@ -13,6 +13,24 @@
             padding: 0;
         }
 
+        /* Music Toggle Button */
+        #music-control {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #ffd700;
+            color: #b30000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+        #music-control:hover { transform: scale(1.1); }
+
         header {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #800000;
             padding: 50px 20px;
@@ -84,6 +102,12 @@
 </head>
 <body>
 
+<audio id="theme-song" loop>
+    <source src="theme.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-control" onclick="toggleMusic()">🎵 Müzik: KAPALI</button>
+
 <header>
     <img src="logo.png" alt="SAK PARTİ" class="logo">
     <h1>SAK PARTİ</h1>
@@ -91,7 +115,6 @@
 </header>
 
 <div class="container">
-    
     <h2 class="section-title">Parti Yönetimi ve Güçleri</h2>
     <div class="grid">
         
@@ -105,8 +128,7 @@
                     <li>Uzunluk 1.92</li>
                     <li>3 Katlı Villa Sahibi</li>
                     <li>27cm</li>
-                    <li>Dört Yol Muhafızı</li>
-                    <li>Yalnızlıktan Kafayı Yiyor - Hanımlar Aranıyor</li>
+                    <li>Beş Yol Muhafızı</li> <li>Yalnızlıktan Kafayı Yiyor - Hanımlar Aranıyor</li>
                 </ul>
             </div>
         </div>
@@ -148,16 +170,28 @@
             <div class="card-body"><h3>Lizzy</h3><p style="text-align:center;">Milletvekili</p></div>
         </div>
     </div>
-
 </div>
 
 <div class="social-area">
-    <h2>Bizi Takip Edin</h2>
     <a href="#" class="social-btn yt">YOUTUBE</a>
     <a href="#" class="social-btn tt">TIKTOK</a>
 </div>
 
 <footer>&copy; 2026 SAK PARTİ. Tüm Hakları Saklıdır.</footer>
+
+<script>
+    function toggleMusic() {
+        var audio = document.getElementById("theme-song");
+        var btn = document.getElementById("music-control");
+        if (audio.paused) {
+            audio.play();
+            btn.innerHTML = "🎶 Müzik: AÇIK";
+        } else {
+            audio.pause();
+            btn.innerHTML = "🎵 Müzik: KAPALI";
+        }
+    }
+</script>
 
 </body>
 </html>
