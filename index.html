@@ -29,7 +29,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             transition: 0.3s;
         }
-        #music-control:hover { transform: scale(1.1); }
 
         header {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #800000;
@@ -45,7 +44,7 @@
         .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
         .section-title { text-align: center; font-size: 2.2rem; margin: 40px 0 20px 0; border-bottom: 2px solid #ffd700; padding-bottom: 10px; }
 
-        /* Card Grid & Hover Effects */
+        /* Card Grid & Hover Reaction */
         .grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -59,7 +58,6 @@
             border-radius: 15px; 
             overflow: hidden; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
-            text-align: center; 
             transition: all 0.4s ease;
         }
 
@@ -73,7 +71,6 @@
         .card-body h3 { margin: 0; color: #b30000; font-size: 1.6rem; text-align: center; }
         .card-body .title { display: block; text-align: center; font-weight: bold; color: #777; margin-bottom: 15px; text-transform: uppercase; }
 
-        /* Superpowers List */
         .powers {
             background: #f9f9f9;
             padding: 10px;
@@ -83,19 +80,30 @@
             margin: 0;
             padding-left: 15px;
         }
-        .powers li {
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-            color: #444;
-        }
-        .powers li::before {
-            content: "⚡ ";
-        }
+        .powers li { font-size: 0.9rem; margin-bottom: 5px; color: #444; }
+        .powers li::before { content: "⚡ "; }
 
-        .social-area { background: #1a1a1a; padding: 60px 20px; text-align: center; }
-        .social-btn { display: inline-block; color: white; text-decoration: none; padding: 15px 40px; margin: 10px; border-radius: 30px; font-weight: bold; transition: 0.3s; }
+        /* Social Media Area */
+        .social-area { 
+            background: #1a1a1a; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-top: 3px solid #ffd700;
+        }
+        .social-btn { 
+            display: inline-block; 
+            color: white; 
+            text-decoration: none; 
+            padding: 15px 40px; 
+            margin: 10px; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            font-size: 1.2rem;
+            transition: 0.3s; 
+        }
         .yt { background: #e62117; }
-        .tt { background: #000; border: 1px solid #fff; }
+        .tt { background: #000; border: 2px solid #fff; }
+        .social-btn:hover { transform: scale(1.1); filter: brightness(1.2); }
 
         footer { background: #000; padding: 20px; text-align: center; color: #aaa; }
     </style>
@@ -115,9 +123,9 @@
 </header>
 
 <div class="container">
+    
     <h2 class="section-title">Parti Yönetimi ve Güçleri</h2>
     <div class="grid">
-        
         <div class="card">
             <img src="ferudun.jpg" alt="Ferudun Tosun">
             <div class="card-body">
@@ -128,7 +136,8 @@
                     <li>Uzunluk 1.92</li>
                     <li>3 Katlı Villa Sahibi</li>
                     <li>27cm</li>
-                    <li>Beş Yol Muhafızı</li> <li>Yalnızlıktan Kafayı Yiyor - Hanımlar Aranıyor</li>
+                    <li>Beş Yol Muhafızı</li>
+                    <li>Yalnızlıktan Kafayı Yiyor - Hanımlar Aranıyor</li>
                 </ul>
             </div>
         </div>
@@ -156,25 +165,23 @@
                 </ul>
             </div>
         </div>
-
     </div>
 
     <h2 class="section-title">Milletvekilleri</h2>
     <div class="grid">
         <div class="card">
-            <img src="avina.jpg" alt="Avina">
-            <div class="card-body"><h3>Avina</h3><p style="text-align:center;">Milletvekili</p></div>
+            <img src="avina.jpg" alt="Avina"><div class="card-body"><h3>Avina</h3><p style="text-align:center;">Milletvekili</p></div>
         </div>
         <div class="card">
-            <img src="lizzy.jpg" alt="Lizzy">
-            <div class="card-body"><h3>Lizzy</h3><p style="text-align:center;">Milletvekili</p></div>
+            <img src="lizzy.jpg" alt="Lizzy"><div class="card-body"><h3>Lizzy</h3><p style="text-align:center;">Milletvekili</p></div>
         </div>
     </div>
 </div>
 
 <div class="social-area">
-    <a href="#" class="social-btn yt">YOUTUBE</a>
-    <a href="#" class="social-btn tt">TIKTOK</a>
+    <h2 style="margin-bottom:30px;">Resmi Kanallarımız</h2>
+    <a href="https://www.youtube.com/@FAHRETTTIN!" class="social-btn yt" target="_blank">YOUTUBE</a>
+    <a href="https://www.tiktok.com/@fahrettinf35" class="social-btn tt" target="_blank">TIKTOK</a>
 </div>
 
 <footer>&copy; 2026 SAK PARTİ. Tüm Hakları Saklıdır.</footer>
