@@ -84,6 +84,25 @@
         .powers li { font-size: 0.9rem; margin-bottom: 5px; color: #444; }
         .powers li::before { content: "⚡ "; }
 
+        /* MECLIS CHAT STYLES */
+        .meclis-area {
+            background: #2f3136;
+            border: 4px solid #ffd700;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        .meclis-status {
+            background: #ffd700;
+            color: #b30000;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
         /* Social Media Area */
         .social-area { 
             background: #1a1a1a; 
@@ -177,6 +196,12 @@
             <img src="lizzy.jpg" alt="Lizzy"><div class="card-body"><h3>Lizzy</h3><p style="text-align:center;">Milletvekili</p></div>
         </div>
     </div>
+
+    <h2 class="section-title">SAK PARTİ MİLLİ MECLİSİ</h2>
+    <div class="meclis-area">
+        <div class="meclis-status">● CANLI SOHBET VE ÜYE GİRİŞİ</div>
+        <iframe src="https://e.widgetbot.io/channels/YOUR_SERVER_ID/YOUR_CHANNEL_ID" height="600" width="100%" allowtransparency="true" frameborder="0"></iframe>
+    </div>
 </div>
 
 <div class="social-area">
@@ -186,6 +211,13 @@
 </div>
 
 <footer>&copy; 2026 SAK PARTİ. Tüm Hakları Saklıdır.</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+        server: 'YOUR_SERVER_ID', // Put your Server ID here
+        channel: 'YOUR_CHANNEL_ID'  // Put your Channel ID here
+    })
+</script>
 
 <script>
     function toggleMusic() {
@@ -203,6 +235,3 @@
 
 </body>
 </html>
-
-
-
